@@ -1,5 +1,11 @@
+import "./globals.css";
+
 import type { Metadata } from "next";
+
 import { Vazirmatn } from "next/font/google";
+
+import { Geist, Geist_Mono } from "next/font/google";
+
 
 const vazir = Vazirmatn({
   variable: "--font-vazir-sans",
@@ -18,10 +24,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+
     <html lang="fa" dir="rtl">
       <body className={`${vazir.variable} dark `}>
         <main className="container">{children}</main>
       </body>
-    </html>
-  );
+
 }
