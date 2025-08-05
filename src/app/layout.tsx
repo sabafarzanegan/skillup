@@ -2,9 +2,15 @@ import "./globals.css";
 
 import type { Metadata } from "next";
 
+
+import { Vazirmatn } from "next/font/google";
+import "./globals.css";
+import ThemeProvider from "@/provider/theme-provider";
+
 import { Vazirmatn } from "next/font/google";
 
 import { Geist, Geist_Mono } from "next/font/google";
+
 
 
 const vazir = Vazirmatn({
@@ -26,8 +32,12 @@ export default function RootLayout({
   return (
 
     <html lang="fa" dir="rtl">
-      <body className={`${vazir.variable} dark `}>
-        <main className="container">{children}</main>
-      </body>
+      <ThemeProvider>
+        <body className={`${vazir.variable}  `}>
+          <main className="container">{children}</main>
+        </body>
+      </ThemeProvider>
+    </html>
+  );
 
 }
