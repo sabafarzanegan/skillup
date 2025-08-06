@@ -9,7 +9,9 @@
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "format": "prettier --write .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
@@ -29,11 +31,13 @@
     "@antfu/eslint-config": "^4.17.0",
     "@eslint/eslintrc": "^3",
     "@next/eslint-plugin-next": "^15.4.1",
+    "@storybook/nextjs": "^9.1.1",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@typescript-eslint/eslint-plugin": "^8.37.0",
     "@typescript-eslint/parser": "^8.37.0",
+    "ajv": "^8.17.1",
     "eslint": "^9.31.0",
     "eslint-config-next": "15.4.1",
     "eslint-config-prettier": "^10.1.5",
@@ -44,9 +48,11 @@
     "eslint-plugin-promise": "^7.2.1",
     "eslint-plugin-security": "^3.0.1",
     "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-storybook": "^9.1.1",
     "eslint-plugin-unicorn": "^59.0.1",
     "husky": "^9.1.7",
     "prettier": "^3.6.2",
+    "storybook": "^9.1.1",
     "typescript": "^5"
   }
 }

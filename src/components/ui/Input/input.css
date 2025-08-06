@@ -1,0 +1,17 @@
+.input {
+  background-color: transparent;
+  border: 2px solid #ccc;
+  border-radius: 0.375rem;
+  padding: 0.25rem 0.75rem;
+  height: 2.25rem;
+  width: 100%;
+  min-width: 250px;
+  font-size: 1rem;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.05);
+  outline: none;
+  display: flex;
+  transition:
+    color 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
