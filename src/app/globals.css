@@ -19,6 +19,8 @@ a {
   --Charcoal: #2e2e2e;
   --Mustard: #f5bd33;
   --Skyblue: #3fbdf1;
+  --Error: oklch(57.7% 0.245 27.325);
+  --Slate: oklch(86.9% 0.022 252.894);
 
   /* font family */
   --font-vazir-sans: "Vazirmatn", sans-serif;
@@ -98,6 +100,8 @@ body {
   --Charcoal: #d9d9d9;
   --Mustard: #caa423;
   --Skyblue: #2a8bcf;
+  --Error: oklch(57.7% 0.245 27.325);
+  --Slate: oklch(86.9% 0.022 252.894);
 }
 body {
   background-color: var(--Whisper);

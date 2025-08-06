@@ -1,0 +1,42 @@
+.btn-default-style {
+  padding: 4px 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--space-1);
+  color: var(--Charcoal);
+  transition: all ease-in-out 0.5s;
+  cursor: pointer;
+}
+
+.btn-default {
+  background: var(--Skyblue);
+}
+
+.btn-secondary {
+  background: var(--Mustard);
+}
+
+.btn-destructive {
+  background: var(--Error);
+}
+
+.btn-outline {
+  background: var(--Slate);
+  color: #2e2e2e;
+}
+.btn-default:hover,
+.btn-secondary:hover,
+.btn-destructive:hover,
+.btn-outline:hover {
+  opacity: 0.82;
+}
+button:disabled,
+button[disabled] {
+  opacity: 0.7;
+  cursor: not-allowed;
+  pointer-events: none;
+  transition: none;
+  background-color: oklch(86.9% 0.022 252.894);
+  color: black;
+}
