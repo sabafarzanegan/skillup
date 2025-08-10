@@ -11,38 +11,41 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
-const eslintConfig = [...compat.config({
-  extends: ["next/core-web-vitals", "next/typescript", "prettier"],
-  plugins: [
-    "simple-import-sort",
-    "unicorn",
-    "node",
-    "@typescript-eslint",
-    "@next/next",
-    "security",
-    "promise",
-    "import",
-    "jsdoc",
-  ],
-  rules: {
-    // Style
-    semi: ["error"],
-    quotes: ["error", "double"],
-    "no-console": ["warn"],
-    "no-var": ["error"],
-    "no-else-return": ["error"],
+const eslintConfig = [
+  ...compat.config({
+    extends: ["next/core-web-vitals", "next/typescript", "prettier"],
+    plugins: [
+      "simple-import-sort",
+      "unicorn",
+      "node",
+      "@typescript-eslint",
+      "@next/next",
+      "security",
+      "promise",
+      "import",
+      "jsdoc",
+    ],
+    rules: {
+      // Style
+      semi: ["error"],
+      quotes: ["error", "double"],
+      "no-console": ["warn"],
 
-    // TypeScript
-    "@typescript-eslint/no-unused-vars": ["warn", { argsIgnorePattern: "^_" }],
-    "@typescript-eslint/no-explicit-any": ["warn"],
+      "no-else-return": ["error"],
 
-    // Next.js
-    "@next/next/no-html-link-for-pages": "error",
-    "@next/next/no-img-element": "warn",
+      // TypeScript
+      "@typescript-eslint/no-unused-vars": ["warn", { argsIgnorePattern: "^_" }],
+      "@typescript-eslint/no-explicit-any": ["warn"],
 
-    // Node
-    "node/prefer-global/process": ["off"],
-  },
-}), ...storybook.configs["flat/recommended"]];
+      // Next.js
+      "@next/next/no-html-link-for-pages": "error",
+      "@next/next/no-img-element": "warn",
+
+      // Node
+      "node/prefer-global/process": ["off"],
+    },
+  }),
+  ...storybook.configs["flat/recommended"],
+];
 
 export default eslintConfig;

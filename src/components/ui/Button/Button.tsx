@@ -9,7 +9,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <button
         ref={ref}
-        className={`btn-default-style font-regular body-md ${className} btn-${variant}`}
+        className={`btn-default-style font-regular body-md  btn-${variant} ${className}`}
         {...props}
       />
     );
