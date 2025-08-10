@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="fa" dir="rtl">
       <ThemeProvider>
         <body className={`${vazir.variable}  `}>
-          <main className="container">{children}</main>
+          <main className="">{children}</main>
         </body>
       </ThemeProvider>
     </html>

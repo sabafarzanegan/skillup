@@ -21,9 +21,8 @@ a {
   --Skyblue: #3fbdf1;
   --Error: oklch(57.7% 0.245 27.325);
   --Slate: oklch(86.9% 0.022 252.894);
-
-  /* font family */
-  --font-vazir-sans: "Vazirmatn", sans-serif;
+  --Shadow-card: rgba(0, 0, 0, 0.5);
+  --transparent: #f9f9f9 /* font family */ --font-vazir-sans: "Vazirmatn", sans-serif;
   /* spacing */
   --space-0: 0rem; /* 0px */
   --space-1: 0.25rem; /* 4px */
@@ -102,6 +101,8 @@ body {
   --Skyblue: #2a8bcf;
   --Error: oklch(57.7% 0.245 27.325);
   --Slate: oklch(86.9% 0.022 252.894);
+  --Shadow-card: rgba(255, 255, 255, 0.826);
+  --transparent: #f9f9f9;
 }
 body {
   background-color: var(--Whisper);
@@ -208,23 +209,29 @@ select:focus {
 }
 
 /* ========== MEDIA QUERIES========== */
-
-@media (min-width: var(--bp-sm)) {
+@media (min-width: 28rem) {
+  /* sm */
+}
+@media (min-width: 32rem) {
   /* sm */
 }
 
-@media (min-width: var(--bp-md)) {
+@media (min-width: 40rem) {
+  /* sm */
+}
+
+@media (min-width: 48rem) {
   /* md */
 }
 
-@media (min-width: var(--bp-lg)) {
+@media (min-width: 64rem) {
   /* lg */
 }
 
-@media (min-width: var(--bp-xl)) {
+@media (min-width: 80rem) {
   /* xl */
 }
 
-@media (min-width: var(--bp-2xl)) {
+@media (min-width: 96rem) {
   /* 2xl */
 }
