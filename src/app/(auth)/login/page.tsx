@@ -1,5 +1,5 @@
-import Loginform from "@/components/main/auth/login/Loginform";
+import Loginform from "@/components/main/auth/loginform/Loginform";
 
-export default function loginpage() {
+export default async function loginpage() {
   return <Loginform />;
 }

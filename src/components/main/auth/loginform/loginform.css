@@ -1,0 +1,97 @@
+.card-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 20px;
+}
+.card-login {
+  width: 600px;
+}
+
+.login-title {
+  font-size: var(--space-6);
+  font-weight: 800;
+}
+
+.login-description {
+  font-size: var(--space-4);
+}
+.login-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.login-btn {
+  width: 100%;
+  border-radius: var(--space-2) !important;
+  font-size: var(--space-4);
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+  font-weight: 450;
+  background-color: var(--transparent) !important;
+  border: 1px solid black !important;
+}
+.login-btn:hover {
+  background-color: oklch(87.448% 0.00691 286.049) !important;
+  border: none !important;
+}
+
+.login-icon {
+  margin: 0px 10px;
+}
+
+@media (min-width: 40rem) {
+  .login-description {
+    font-size: var(--space-5);
+  }
+  .login-btn {
+    font-size: var(--space-5);
+  }
+}
+
+.loader-login-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: relative;
+  animation: rotate 1s linear infinite;
+}
+.loader-login-btn::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  inset: 0px;
+  border-radius: 50%;
+  border: 5px solid var(--Mustard);
+  animation: prixClipFix 2s linear infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes prixClipFix {
+  0% {
+    clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
+  }
+  25% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0);
+  }
+  50% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%);
+  }
+  75% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+  }
+  100% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+}
