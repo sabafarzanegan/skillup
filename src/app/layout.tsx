@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import { Vazirmatn } from "next/font/google";
 import "./globals.css";
 import ThemeProvider from "@/provider/theme-provider";
-
+import { Toaster } from "sonner";
 const vazir = Vazirmatn({
   variable: "--font-vazir-sans",
   subsets: ["latin"],
@@ -27,6 +27,7 @@ export default function RootLayout({
       <ThemeProvider>
         <body className={`${vazir.variable}  `}>
           <main className="">{children}</main>
+          <Toaster expand={true} richColors />
         </body>
       </ThemeProvider>
     </html>
