@@ -1,6 +1,7 @@
 "use client";
 import { authClient } from "@/app/lib/auth-client";
 import { Button } from "@/components/ui/Button/Button";
+import { Loader } from "@/components/ui/Loader/Loader";
 import { useTransition } from "react";
 import { FaGithub } from "react-icons/fa";
 import { toast } from "sonner";
@@ -32,7 +33,7 @@ function GithubBtn() {
       className="login-btn"
       variant="outline"
     >
-      {isPending ? <span className="loader-login-btn "></span> : "ورود با گیت هاب"}
+      {isPending ? <Loader variant="secondary" /> : "ورود با گیت هاب"}
 
       <FaGithub size={24} className="login-icon" />
     </Button>

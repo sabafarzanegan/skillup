@@ -1,6 +1,7 @@
 "use client";
 import { authClient } from "@/app/lib/auth-client";
 import { Button } from "@/components/ui/Button/Button";
+import { Loader } from "@/components/ui/Loader/Loader";
 import { useTransition } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { toast } from "sonner";
@@ -30,7 +31,7 @@ function GoogleBtn() {
       variant="outline"
       className="login-btn"
     >
-      {isPending ? <span className="loader-login-btn "></span> : "ورود با گوگل"}
+      {isPending ? <Loader variant="secondary" /> : "ورود با گوگل"}
 
       <FcGoogle size={24} className="login-icon" />
     </Button>
