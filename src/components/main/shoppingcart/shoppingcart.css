@@ -1,0 +1,25 @@
+.cart-icon-btn {
+  height: 36px;
+  width: 36px;
+  padding: 0 !important;
+  box-shadow: 5px 5px 0px var(--Charcoal);
+}
+
+.cart-icon {
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 48rem) {
+  /* md */
+  .cart-icon-btn {
+    height: 42px;
+    width: 42px;
+
+    box-shadow: 5px 5px 0px var(--Charcoal);
+  }
+  .cart-icon {
+    width: 20px;
+    height: 20px;
+  }
+}

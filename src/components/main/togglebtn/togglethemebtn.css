@@ -1,0 +1,19 @@
+.toggle-theme-container {
+  display: none;
+}
+.toggle-theme-btn {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  height: 44px;
+  box-shadow: 5px 5px 0px var(--Charcoal);
+}
+
+@media (min-width: 48rem) {
+  /* md */
+  .toggle-theme-btn {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    height: 44px;
+    box-shadow: 5px 5px 0px var(--Charcoal);
+  }
+}

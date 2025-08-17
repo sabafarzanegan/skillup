@@ -17,11 +17,12 @@ a {
   /* colors */
   --Whisper: #f9f9f9;
   --Charcoal: #2e2e2e;
-  --Mustard: #f5bd33;
+  --Mustard: rgba(245, 189, 51);
   --Skyblue: #3fbdf1;
   --Error: oklch(57.7% 0.245 27.325);
   --Slate: oklch(86.9% 0.022 252.894);
   --Shadow-card: rgba(0, 0, 0, 0.5);
+
   --transparent: #f9f9f9 /* font family */ --font-vazir-sans: "Vazirmatn", sans-serif;
   /* spacing */
   --space-0: 0rem; /* 0px */
@@ -161,14 +162,11 @@ select:focus {
 }
 
 /* ========== GRID SYSTEM ========== */
-.container {
-  max-width: 1440px;
+/* .container {
+  max-width: 1840px;
   margin: 0 auto;
   padding: 0 160px;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: var(--space-6);
-}
+} */
 
 /* Column spans */
 .col-1 {
@@ -207,31 +205,60 @@ select:focus {
 .col-12 {
   grid-column: span 12;
 }
-
+.container {
+  margin: 0 auto;
+  padding: 0 1rem; /* پایه: خیلی کم */
+}
 /* ========== MEDIA QUERIES========== */
 @media (min-width: 28rem) {
-  /* sm */
+  .container {
+    max-width: 100%;
+    padding: 0 1.25rem; /* 20px */
+  }
 }
 @media (min-width: 32rem) {
   /* sm */
+  .container {
+    max-width: 480px;
+    padding: 0 1.5rem; /* 24px */
+  }
 }
 
 @media (min-width: 40rem) {
-  /* sm */
+  .container {
+    max-width: 640px;
+    padding: 0 2rem; /* 32px */
+  }
 }
 
 @media (min-width: 48rem) {
   /* md */
+  .container {
+    max-width: 768px;
+    padding: 0 2.5rem; /* 40px */
+  }
 }
 
 @media (min-width: 64rem) {
   /* lg */
+  .container {
+    max-width: 1024px;
+    padding: 0 3rem; /* 48px */
+  }
 }
 
 @media (min-width: 80rem) {
   /* xl */
+  .container {
+    max-width: 1280px;
+    padding: 0 4rem; /* 64px */
+  }
 }
 
 @media (min-width: 96rem) {
   /* 2xl */
+  .container {
+    max-width: 1536px;
+    padding: 0 5rem; /* 80px */
+  }
 }
