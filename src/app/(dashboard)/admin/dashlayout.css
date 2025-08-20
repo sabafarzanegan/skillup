@@ -1,0 +1,21 @@
+.dashboard-layout {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin-top: 20px;
+}
+
+.dashboard-container {
+  padding: min(30px, 7%);
+}
+
+@media (max-width: 48rem) {
+  /* md */
+  .dashboard-layout {
+    grid-template-columns: 1fr;
+  }
+  .dashboard-container {
+    padding: 0px;
+  }
+}
